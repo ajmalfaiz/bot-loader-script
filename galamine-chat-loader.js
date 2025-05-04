@@ -1,6 +1,6 @@
 let chatElemChatLoading = true;
 const CHAT_ELEMENT = "root";
-const destinationUrl = "";
+const destinationUrl = "https://galamine.com";
 const chatbotUrl = "https://chatbot.galamine.com";
 
 function chatElemChatCreateScript(attributes, content) {

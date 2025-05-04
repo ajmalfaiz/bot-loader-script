@@ -89,6 +89,8 @@ const chatElemChatLoad = async () => {
 
 window.shadowMode = true;
 
-window.onload = function () {
+if (document.readyState === "complete" || document.readyState === "interactive") {
   chatElemChatLoad();
-};
+} else {
+  window.addEventListener("DOMContentLoaded", chatElemChatLoad);
+}
